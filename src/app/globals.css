@@ -1,42 +1,85 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* button:hover {
+  background-color: #005bb5;
+} */
+
+.ilxvdX, .flqyRr {
+  padding: 20px;
+}
+.fMmnyQ, .glkBxo {
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.fMmnyQ button {
+  background-color: #9b9b9b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.glkBxo button {
+  background-color: #9b9b9b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.fMmnyQ h1, .glkBxo h1 {
+  font-size: 1.5em;
+}
+.iBLxVG, .hgpZiC {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.jcZWOK, .dqShKu {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  min-height: 100px;
+  
+}
+@media (max-width: 480px) {
+  .iBLxVG {
+      grid-template-columns: 1fr;
   }
+}
+.gagdYg, .gSmdgg {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
