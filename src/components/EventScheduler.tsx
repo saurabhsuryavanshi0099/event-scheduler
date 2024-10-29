@@ -22,7 +22,7 @@ interface Event {
   color?: string;
 }
 interface EventSchedulerProps {
-  initialEvents: Event[];
+  initialEvents?: Event[];
 }
 const EventScheduler: React.FC<EventSchedulerProps> = ({}) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
